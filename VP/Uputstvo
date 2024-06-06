@@ -1,0 +1,10 @@
+Pokretanje vp:
+make
+./output 200 400 /path/to/input/image.jpg /path/to/output/text/file.txt /path/to/processed/text/file.txt
+
+./output 200 400 /home/nikola/Desktop/proj/y24-g07/Data/slika.jpg /home/nikola/Desktop/bram_memory.txt /home/nikola/Desktop/bram_memory2.txt 
+
+Pokretanje skripte:
+python3 skripta2_txttoimg.py 
+
+skripta2_txttoimg.py linija 24, promeniti rezoluciju, linija 27 putanja za ucitavanje txt fajla i za ispis slike. Ako se ucita  bram_memory_txt to je slika pre obrade, bram_memory2 je slika posle obrade
