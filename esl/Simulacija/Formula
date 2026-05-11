@@ -1,0 +1,6 @@
+kasnjenje BRAM 15ns
+kasnjenje IP 8.5ns
+
+za obradu 1 slike je potrbeno 95000ps
+
+Broj slika u sekundi = 1s/95000ps = 10.65

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul  3 22:01:56 2025
+# Process ID: 10708
+# Current directory: C:/Users/Ognjen Visnjic/Desktop/y24-g07/psds/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7112 C:\Users\Ognjen Visnjic\Desktop\y24-g07\psds\project_2\project_2.xpr
+# Log file: C:/Users/Ognjen Visnjic/Desktop/y24-g07/psds/project_2/vivado.log
+# Journal file: C:/Users/Ognjen Visnjic/Desktop/y24-g07/psds/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Ognjen Visnjic/Desktop/y24-g07/psds/project_2/project_2.xpr}
+update_compile_order -fileset sources_1

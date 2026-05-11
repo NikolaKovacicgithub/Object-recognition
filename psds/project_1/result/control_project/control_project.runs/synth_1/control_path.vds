@@ -1,0 +1,401 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Jul  4 22:39:37 2025
+# Process ID         : 8008
+# Current directory  : C:/Users/nikol/Downloads/ee77/y24-g07/psds/project_1/result/control_project/control_project.runs/synth_1
+# Command line       : vivado.exe -log control_path.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source control_path.tcl
+# Log file           : C:/Users/nikol/Downloads/ee77/y24-g07/psds/project_1/result/control_project/control_project.runs/synth_1/control_path.vds
+# Journal file       : C:/Users/nikol/Downloads/ee77/y24-g07/psds/project_1/result/control_project/control_project.runs/synth_1\vivado.jou
+# Running On         : Nikola
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i5-10500H CPU @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16959 MB
+# Swap memory        : 3087 MB
+# Total Virtual      : 20046 MB
+# Available Virtual  : 8186 MB
+#-----------------------------------------------------------
+source control_path.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 612.062 ; gain = 211.461
+Command: read_checkpoint -auto_incremental -incremental C:/Users/nikol/Downloads/ee77/y24-g07/psds/project_1/result/control_project/control_project.srcs/utils_1/imports/synth_1/control_path.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/nikol/Downloads/ee77/y24-g07/psds/project_1/result/control_project/control_project.srcs/utils_1/imports/synth_1/control_path.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top control_path -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10044
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1324.363 ; gain = 495.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'control_path' [C:/Users/nikol/Downloads/ee77/y24-g07/psds/project_1/vhdl/control_path.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'control_path' (0#1) [C:/Users/nikol/Downloads/ee77/y24-g07/psds/project_1/vhdl/control_path.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element min_y_reg_reg was removed.  [C:/Users/nikol/Downloads/ee77/y24-g07/psds/project_1/vhdl/control_path.vhd:88]
+WARNING: [Synth 8-6014] Unused sequential element max_y_reg_reg was removed.  [C:/Users/nikol/Downloads/ee77/y24-g07/psds/project_1/vhdl/control_path.vhd:89]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1439.367 ; gain = 610.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1439.367 ; gain = 610.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1439.367 ; gain = 610.438
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1439.367 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/nikol/Downloads/ee77/y24-g07/psds/project_1/vhdl/constraints.xdc]
+Finished Parsing XDC File [C:/Users/nikol/Downloads/ee77/y24-g07/psds/project_1/vhdl/constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1508.418 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1508.867 ; gain = 0.449
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1508.867 ; gain = 679.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1508.867 ; gain = 679.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1508.867 ; gain = 679.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'control_path'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle | 0000000000000000000000000000000000000000000000000000000000000001 |                          0000000
+        bram_read_image1 | 0000000000000000000000000000000000000000000000000000000000000010 |                          0100011
+                   temp1 | 0000000000000000000000000000000000000000000000000000000000000100 |                          0011110
+             check_pixel | 0000000000000000000000000000000000000000000000000000000000001000 |                          0101101
+     write_to_bram_mask1 | 0000000000000000000000000000000000000000000000000000000000010000 |                          0101001
+                    temp | 0000000000000000000000000000000000000000000000000000000000100000 |                          0011101
+              mask_inner | 0000000000000000000000000000000000000000000000000000000001000000 |                          0101100
+              mask_outer | 0000000000000000000000000000000000000000000000000000000010000000 |                          0101011
+        bram_read_image2 | 0000000000000000000000000000000000000000000000000000000100000000 |                          0100100
+                   temp2 | 0000000000000000000000000000000000000000000000000000001000000000 |                          0011111
+              bram_write | 0000000000000000000000000000000000000000000000000000010000000000 |                          0100110
+                   temp3 | 0000000000000000000000000000000000000000000000000000100000000000 |                          0100000
+                   inc_x | 0000000000000000000000000000000000000000000000000001000000000000 |                          0100111
+                   inc_y | 0000000000000000000000000000000000000000000000000010000000000000 |                          0101000
+        bram_read_image3 | 0000000000000000000000000000000000000000000000000100000000000000 |                          0100101
+                   temp4 | 0000000000000000000000000000000000000000000000001000000000000000 |                          0100001
+                   maska | 0000000000000000000000000000000000000000000000010000000000000000 |                          0110000
+                      ij | 0000000000000000000000000000000000000000000000100000000000000000 |                          0011100
+              dilation_i | 0000000000000000000000000000000000000000000001000000000000000000 |                          0110001
+              dilation_j | 0000000000000000000000000000000000000000000010000000000000000000 |                          0110010
+            dilation_end | 0000000000000000000000000000000000000000000100000000000000000000 |                          0110011
+     write_to_bram_mask2 | 0000000000000000000000000000000000000000001000000000000000000000 |                          0101010
+                   temp5 | 0000000000000000000000000000000000000000010000000000000000000000 |                          0100010
+                   xplus | 0000000000000000000000000000000000000000100000000000000000000000 |                          0110100
+          dilation_inner | 0000000000000000000000000000000000000001000000000000000000000000 |                          0101111
+          dilation_outer | 0000000000000000000000000000000000000010000000000000000000000000 |                          0101110
+        bram_read_image4 | 0000000000000000000000000000000000000100000000000000000000000000 |                          0010101
+                   temp6 | 0000000000000000000000000000000000001000000000000000000000000000 |                          0010111
+             bram_write1 | 0000000000000000000000000000000000010000000000000000000000000000 |                          0010110
+                   temp7 | 0000000000000000000000000000000000100000000000000000000000000000 |                          0011000
+                  inc1_x | 0000000000000000000000000000000001000000000000000000000000000000 |                          0011001
+                  inc1_y | 0000000000000000000000000000000010000000000000000000000000000000 |                          0011010
+        bram_read_image5 | 0000000000000000000000000000000100000000000000000000000000000000 |                          0011011
+                   temp8 | 0000000000000000000000000000001000000000000000000000000000000000 |                          0010100
+            check_pixel1 | 0000000000000000000000000000010000000000000000000000000000000000 |                          0010010
+                     ij1 | 0000000000000000000000000000100000000000000000000000000000000000 |                          0010011
+                  temp_i | 0000000000000000000000000001000000000000000000000000000000000000 |                          0111000
+                  temp_j | 0000000000000000000000000010000000000000000000000000000000000000 |                          0111010
+                    neww | 0000000000000000000000000100000000000000000000000000000000000000 |                          0111011
+              bram_check | 0000000000000000000000001000000000000000000000000000000000000000 |                          0010000
+                   temp9 | 0000000000000000000000010000000000000000000000000000000000000000 |                          0001110
+                   check | 0000000000000000000000100000000000000000000000000000000000000000 |                          0010001
+                   white | 0000000000000000000001000000000000000000000000000000000000000000 |                          0111001
+        bram_write_pixel | 0000000000000000000010000000000000000000000000000000000000000000 |                          0001111
+                  x1plus | 0000000000000000000100000000000000000000000000000000000000000000 |                          0110111
+             pixel_inner | 0000000000000000001000000000000000000000000000000000000000000000 |                          0110110
+             pixel_outer | 0000000000000000010000000000000000000000000000000000000000000000 |                          0110101
+        bram_read_image6 | 0000000000000000100000000000000000000000000000000000000000000000 |                          0001100
+                  temp10 | 0000000000000001000000000000000000000000000000000000000000000000 |                          0001101
+             bram_write2 | 0000000000000010000000000000000000000000000000000000000000000000 |                          0000111
+                  temp11 | 0000000000000100000000000000000000000000000000000000000000000000 |                          0001000
+                  inc2_x | 0000000000001000000000000000000000000000000000000000000000000000 |                          0001010
+                  inc2_y | 0000000000010000000000000000000000000000000000000000000000000000 |                          0001011
+        bram_read_image7 | 0000000000100000000000000000000000000000000000000000000000000000 |                          0001001
+                  temp12 | 0000000001000000000000000000000000000000000000000000000000000000 |                          0000110
+            check_pixel2 | 0000000010000000000000000000000000000000000000000000000000000000 |                          0000101
+              check_minx | 0000000100000000000000000000000000000000000000000000000000000000 |                          0000001
+              check_maxx | 0000001000000000000000000000000000000000000000000000000000000000 |                          0000010
+              check_miny | 0000010000000000000000000000000000000000000000000000000000000000 |                          0000011
+              check_maxy | 0000100000000000000000000000000000000000000000000000000000000000 |                          0000100
+                  x2plus | 0001000000000000000000000000000000000000000000000000000000000000 |                          1000010
+           contour_inner | 0010000000000000000000000000000000000000000000000000000000000000 |                          0111110
+           contour_outer | 0100000000000000000000000000000000000000000000000000000000000000 |                          0111101
+              area_check | 1000000000000000000000000000000000000000000000000000000000000000 |                          1000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'control_path'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1508.867 ; gain = 679.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               24 Bit    Registers := 5     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  64 Input   64 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 23    
+	  64 Input   24 Bit        Muxes := 5     
+	  64 Input   12 Bit        Muxes := 2     
+	  64 Input    6 Bit        Muxes := 2     
+	  64 Input    4 Bit        Muxes := 2     
+	  64 Input    1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP x_next0, operation Mode is: C+1.
+DSP Report: operator x_next0 is absorbed into DSP x_next0.
+DSP Report: Generating DSP y_next0, operation Mode is: C+1.
+DSP Report: operator y_next0 is absorbed into DSP y_next0.
+DSP Report: Generating DSP plusOp, operation Mode is: C+1.
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP plusOp, operation Mode is: C+1.
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP newX_reg0, operation Mode is: C+A:B.
+DSP Report: operator newX_reg0 is absorbed into DSP newX_reg0.
+DSP Report: Generating DSP newY_reg0, operation Mode is: C+A:B.
+DSP Report: operator newY_reg0 is absorbed into DSP newY_reg0.
+DSP Report: Generating DSP area_next0, operation Mode is: C+1.
+DSP Report: operator area_next0 is absorbed into DSP area_next0.
+DSP Report: Generating DSP objects_count_next2, operation Mode is: C+A:B.
+DSP Report: operator objects_count_next2 is absorbed into DSP objects_count_next2.
+DSP Report: Generating DSP objects_count_next2, operation Mode is: PCIN+A:B.
+DSP Report: operator objects_count_next2 is absorbed into DSP objects_count_next2.
+DSP Report: Generating DSP bram1_addr0, operation Mode is: C+A*B.
+DSP Report: operator bram1_addr0 is absorbed into DSP bram1_addr0.
+DSP Report: operator bram1_addr1 is absorbed into DSP bram1_addr0.
+DSP Report: Generating DSP bram1_addr0, operation Mode is: C+A*B.
+DSP Report: operator bram1_addr0 is absorbed into DSP bram1_addr0.
+DSP Report: operator bram1_addr1 is absorbed into DSP bram1_addr0.
+DSP Report: Generating DSP objects_count_reg0, operation Mode is: C+1.
+DSP Report: operator objects_count_reg0 is absorbed into DSP objects_count_reg0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1518.648 ; gain = 689.719
+---------------------------------------------------------------------------------
+ Sort Area is  bram1_addr0_10 : 0 0 : 271 271 : Used 1 time 100
+ Sort Area is  bram1_addr0_e : 0 0 : 271 271 : Used 1 time 100
+ Sort Area is  objects_count_next2_b : 0 0 : 95 190 : Used 1 time 100
+ Sort Area is  objects_count_next2_b : 0 1 : 95 190 : Used 1 time 100
+ Sort Area is  area_next0_9 : 0 0 : 95 95 : Used 1 time 100
+ Sort Area is  newX_reg0_6 : 0 0 : 20 20 : Used 1 time 100
+ Sort Area is  newY_reg0_8 : 0 0 : 20 20 : Used 1 time 100
+ Sort Area is  x_next0_0 : 0 0 : 10 10 : Used 1 time 100
+ Sort Area is  y_next0_2 : 0 0 : 10 10 : Used 1 time 100
+ Sort Area is  objects_count_reg0_11 : 0 0 : 8 8 : Used 1 time 100
+ Sort Area is  plusOp_3 : 0 0 : 6 6 : Used 1 time 100
+ Sort Area is  plusOp_5 : 0 0 : 6 6 : Used 1 time 100
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|control_path | C+1         | -      | -      | 6      | -      | 6      | -    | -    | 0    | -    | -     | 0    | 0    | 
+|control_path | C+1         | -      | -      | 6      | -      | 6      | -    | -    | 0    | -    | -     | 0    | 0    | 
+|control_path | C+1         | -      | -      | 48     | -      | 4      | -    | -    | 0    | -    | -     | 0    | 0    | 
+|control_path | C+1         | -      | -      | 48     | -      | 4      | -    | -    | 0    | -    | -     | 0    | 0    | 
+|control_path | C+A:B       | 30     | 18     | 48     | -      | 6      | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|control_path | C+A:B       | 30     | 18     | 48     | -      | 6      | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|control_path | C+1         | -      | -      | 32     | -      | 32     | -    | -    | 0    | -    | -     | 0    | 0    | 
+|control_path | C+A:B       | 14     | 18     | 2      | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|control_path | PCIN+A:B    | 14     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|control_path | C+A*B       | 6      | 6      | 6      | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|control_path | C+A*B       | 6      | 6      | 6      | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|control_path | C+1         | -      | -      | 5      | -      | 5      | -    | -    | 0    | -    | -     | 0    | 0    | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1721.023 ; gain = 892.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1769.863 ; gain = 940.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1769.863 ; gain = 940.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1991.008 ; gain = 1162.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1991.008 ; gain = 1162.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1991.008 ; gain = 1162.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1991.008 ; gain = 1162.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1991.008 ; gain = 1162.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1991.008 ; gain = 1162.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|control_path | C+1         | -      | -      | 6      | -      | 6      | -    | -    | 0    | -    | -     | 0    | 0    | 
+|control_path | C+1         | -      | -      | 6      | -      | 6      | -    | -    | 0    | -    | -     | 0    | 0    | 
+|control_path | C+1         | -      | -      | 48     | -      | 4      | -    | -    | 0    | -    | -     | 0    | 0    | 
+|control_path | C+1         | -      | -      | 48     | -      | 4      | -    | -    | 0    | -    | -     | 0    | 0    | 
+|control_path | (C+A:B)'    | 30     | 18     | 48     | -      | 6      | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|control_path | (C+A:B)'    | 30     | 18     | 48     | -      | 6      | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|control_path | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|control_path | A:B+C       | 30     | 6      | 2      | -      | 0      | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|control_path | PCIN+A:B    | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|control_path | C+A*B       | 6      | 6      | 6      | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|control_path | Dynamic     | -      | -      | -      | -      | 12     | -    | -    | -    | -    | -     | 0    | 0    | 
+|control_path | Dynamic     | -      | -      | -      | -      | 5      | -    | -    | -    | -    | -     | 0    | 1    | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    21|
+|2     |DSP48E1 |    12|
+|8     |LUT1    |    12|
+|9     |LUT2    |    70|
+|10    |LUT3    |    70|
+|11    |LUT4    |   120|
+|12    |LUT5    |    32|
+|13    |LUT6    |   160|
+|14    |FDCE    |   246|
+|15    |FDPE    |     6|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1991.008 ; gain = 1162.078
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 1991.008 ; gain = 1092.578
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1991.008 ; gain = 1162.078
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2000.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2003.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 21d5820b
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2003.840 ; gain = 1386.871
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2003.840 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/nikol/Downloads/ee77/y24-g07/psds/project_1/result/control_project/control_project.runs/synth_1/control_path.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file control_path_utilization_synth.rpt -pb control_path_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  4 22:40:34 2025...
